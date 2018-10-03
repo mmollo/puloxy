@@ -1,0 +1,23 @@
+{
+  "name": "puloxy",
+  "version": "0.0.1",
+  "description": "Scriptable TCP Proxy",
+  "main": "puloxy.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmollo/puloxy.git"
+  },
+  "keywords": [
+    "tcp",
+    "proxy"
+  ],
+  "author": "Mallory Mollo",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mmollo/puloxy/issues"
+  },
+  "homepage": "https://github.com/mmollo/puloxy#readme"
+}
