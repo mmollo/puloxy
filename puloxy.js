@@ -12,8 +12,8 @@ class Proxy
             
             let remote = net.connect(dstPort, dstHost, _ => {
                 console.log(this.name, 'Remote connected to ' + dstHost + ':' + dstPort)
-                local.on('disconnect', _ => {remote.destroy()})
-                remote.on('disconnect', _ => {local.destroy()})
+                local.on('close', _ => {remote.end()})
+                remote.on('close', _ => {local.end()})
             })
 
             remote.on('data', data => {
